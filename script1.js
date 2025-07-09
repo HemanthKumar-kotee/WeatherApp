@@ -36,14 +36,16 @@ function addWeatherToPage(data) {
         </div>
     `;
 
-  // cleanup
+  
   main.innerHTML = "";
 
   main.appendChild(weather);
 }
 
 function KtoC(K) {
-  return Math.floor(K - 273.15);
+  
+  return Math.floor(K - 273.153);
+
 }
 
 form.addEventListener("submit", (e) => {
